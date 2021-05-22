@@ -1,0 +1,101 @@
+// START action buttons
+.button-toolbar.clearfix.mb
+  .btn-group
+    button.btn.btn-default.btn-sm(type="button")
+      em.fa.fa-mail-reply.text-gray-dark
+    button.btn.btn-default.btn-sm(type="button")
+      em.fa.fa-mail-reply-all.text-gray-dark
+    button.btn.btn-default.btn-sm(type="button")
+      em.fa.fa-mail-forward.text-gray-dark
+  .btn-group(dropdown='dropdown')
+    button.btn.btn-default.btn-sm.dropdown-toggle(data-toggle='dropdown')
+      span.dropdown-label(style='width: 70px;')
+        em.fa.fa-folder-open
+      span.caret
+    ul.dropdown-menu
+      li: a(href='#')
+          em.fa.fa-inbox.fa-fw
+          | Meetings
+          span.label.label-danger.pull-right 6
+      li: a(href='#')
+          em.fa.fa-file-text-o.fa-fw
+          | CSS
+          span.label.label-info.pull-right.inbox-notification 10
+      li: a(href='#')
+          em.fa.fa-envelope-o.fa-fw
+          | Pending
+      li: a(href='#')
+          em.fa.fa-certificate.fa-fw
+          | Angular
+  .btn-group(dropdown='dropdown')
+    button.btn.btn-default.btn-sm.dropdown-toggle
+      span.dropdown-label More
+      span.caret
+    ul.dropdown-menu
+      li: a(href='#') Mark as Read
+      li: a(href='#') Mark as Unread
+      li: a(href='#') Filter Messages like these
+      li: a(href='#') Mute
+
+  .btn-group.pull-right
+    button.btn.btn-sm.btn-default(type='button')
+      em.fa.fa-archive
+    button.btn.btn-default.btn-sm(type="button")
+      em.fa.fa-exclamation.text-gray-dark
+    button.btn.btn-default.btn-sm(type="button")
+      em.fa.fa-times.text-gray-dark
+
+// END action buttons
+
+.panel.panel-default
+  .panel-body
+    table.table.mb-mails.mb-view
+      tbody
+        tr
+          td(ng-click="$state.transitionTo('app.mailbox.view')")
+            .clearfix
+              .mb-mail-date 10:30pm
+              img.mb-mail-avatar(src="app/img/user/01.jpg", alt="Mail Avatar")
+              .pull-left
+                .mb-mail-from Caleb Brewer
+                .mb-mail-from-list From: 
+                  a(href="#") caleb@mail.com
+                  a(href="#") Felicia@mail.com
+                  a(href="#") Linda@mail.com
+            .mb-mail-preview.mt-lg
+              h4 Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              p In sit amet lorem velit, in dictum lorem. Ut turpis urna, tristique sed adipiscing nec, luctus quis leo. Praesent diam diam, venenatis et gravida viverra, mollis vel sem. Fusce gravida, diam ac adipiscing pretium, sem nibh bibendum diam, non consequat quam metus non nunc. 
+              p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean non ante eget arcu posuere semper ut a orci. Fusce elementum commodo justo quis sollicitudin. 
+              blockquote
+                pCras dolor ligula, laoreet ac vestibulum sed, molestie id odio. Ut consectetur ullamcorper purus a rutrum. 
+              p Maecenas tellus mauris, vestibulum nec sagittis dignissim, malesuada at ante. Fusce dolor lacus, interdum eu tincidunt sed, aliquet vel turpis. Cras et urna at elit laoreet fermentum et non nibh. 
+            .mb-attachment
+              p
+                span
+                  em.fa.fa-paperclip.fa-fw
+                  | 4 attachments — 
+                a(href='#').mr.br.pr  Download all attachments
+                a(href='#') View all images
+              ul.list-inline
+                li
+                  a(href='#')
+                    img.thumb64.img-responsive.img-thumbnail(src='app/img/bg4.jpg')
+                  p  IMG_001.jpg 
+                li
+                  a(href='#')
+                    img.thumb64.img-responsive.img-thumbnail(src='app/img/bg5.jpg')
+                  p  IMG_002.jpg 
+                li
+                  a(href='#')
+                    img.thumb64.img-responsive.img-thumbnail(src='app/img/bg7.jpg')
+                  p  IMG_003.jpg 
+                li
+                  a(href='#')
+                    img.thumb64.img-responsive.img-thumbnail(src='app/img/bg8.jpg')
+                  p  IMG_004.jpg 
+            .media
+              a.pull-left(href='#')
+                img.media-object.img-rounded.thumb32(alt='', src='app/img/user/02.jpg')
+              .media-body
+                textarea.form-control(placeholder='Reply here...')
+

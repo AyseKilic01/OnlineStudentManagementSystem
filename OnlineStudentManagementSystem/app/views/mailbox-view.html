@@ -1,0 +1,143 @@
+<!-- START action buttons-->
+<div class="button-toolbar clearfix mb">
+   <div class="btn-group">
+      <button type="button" class="btn btn-default btn-sm">
+         <em class="fa fa-mail-reply text-gray-dark"></em>
+      </button>
+      <button type="button" class="btn btn-default btn-sm">
+         <em class="fa fa-mail-reply-all text-gray-dark"></em>
+      </button>
+      <button type="button" class="btn btn-default btn-sm">
+         <em class="fa fa-mail-forward text-gray-dark"></em>
+      </button>
+   </div>
+   <div dropdown="dropdown" class="btn-group">
+      <button data-toggle="dropdown" class="btn btn-default btn-sm dropdown-toggle">
+         <span style="width: 70px;" class="dropdown-label">
+            <em class="fa fa-folder-open"></em>
+         </span>
+         <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+         <li>
+            <a href="#">
+               <em class="fa fa-inbox fa-fw"></em>Meetings
+               <span class="label label-danger pull-right">6</span>
+            </a>
+         </li>
+         <li>
+            <a href="#">
+               <em class="fa fa-file-text-o fa-fw"></em>CSS
+               <span class="label label-info pull-right inbox-notification">10</span>
+            </a>
+         </li>
+         <li>
+            <a href="#">
+               <em class="fa fa-envelope-o fa-fw"></em>Pending</a>
+         </li>
+         <li>
+            <a href="#">
+               <em class="fa fa-certificate fa-fw"></em>Angular</a>
+         </li>
+      </ul>
+   </div>
+   <div dropdown="dropdown" class="btn-group">
+      <button class="btn btn-default btn-sm dropdown-toggle">
+         <span class="dropdown-label">More</span>
+         <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+         <li><a href="#">Mark as Read</a>
+         </li>
+         <li><a href="#">Mark as Unread</a>
+         </li>
+         <li><a href="#">Filter Messages like these</a>
+         </li>
+         <li><a href="#">Mute</a>
+         </li>
+      </ul>
+   </div>
+   <div class="btn-group pull-right">
+      <button type="button" class="btn btn-sm btn-default">
+         <em class="fa fa-archive"></em>
+      </button>
+      <button type="button" class="btn btn-default btn-sm">
+         <em class="fa fa-exclamation text-gray-dark"></em>
+      </button>
+      <button type="button" class="btn btn-default btn-sm">
+         <em class="fa fa-times text-gray-dark"></em>
+      </button>
+   </div>
+</div>
+<!-- END action buttons-->
+<div class="panel panel-default">
+   <div class="panel-body">
+      <table class="table mb-mails mb-view">
+         <tbody>
+            <tr>
+               <td ng-click="$state.transitionTo('app.mailbox.view')">
+                  <div class="clearfix">
+                     <div class="mb-mail-date">10:30pm</div>
+                     <img src="app/img/user/01.jpg" alt="Mail Avatar" class="mb-mail-avatar" />
+                     <div class="pull-left">
+                        <div class="mb-mail-from">Caleb Brewer</div>
+                        <div class="mb-mail-from-list">From: <a href="#">caleb@mail.com</a><a href="#">Felicia@mail.com</a><a href="#">Linda@mail.com</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="mb-mail-preview mt-lg">
+                     <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                     <p>In sit amet lorem velit, in dictum lorem. Ut turpis urna, tristique sed adipiscing nec, luctus quis leo. Praesent diam diam, venenatis et gravida viverra, mollis vel sem. Fusce gravida, diam ac adipiscing pretium, sem nibh bibendum
+                        diam, non consequat quam metus non nunc.</p>
+                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean non ante eget arcu posuere semper ut a orci. Fusce elementum commodo justo quis sollicitudin.</p>
+                     <blockquote>
+                        <pCras>dolor ligula, laoreet ac vestibulum sed, molestie id odio. Ut consectetur ullamcorper purus a rutrum.</pCras>
+                     </blockquote>
+                     <p>Maecenas tellus mauris, vestibulum nec sagittis dignissim, malesuada at ante. Fusce dolor lacus, interdum eu tincidunt sed, aliquet vel turpis. Cras et urna at elit laoreet fermentum et non nibh.</p>
+                  </div>
+                  <div class="mb-attachment">
+                     <p>
+                        <span>
+                           <em class="fa fa-paperclip fa-fw"></em>4 attachments —</span><a href="#" class="mr br pr"> Download all attachments</a><a href="#">View all images</a>
+                     </p>
+                     <ul class="list-inline">
+                        <li>
+                           <a href="#">
+                              <img src="app/img/bg4.jpg" class="thumb64 img-responsive img-thumbnail" />
+                           </a>
+                           <p>IMG_001.jpg</p>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <img src="app/img/bg5.jpg" class="thumb64 img-responsive img-thumbnail" />
+                           </a>
+                           <p>IMG_002.jpg</p>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <img src="app/img/bg7.jpg" class="thumb64 img-responsive img-thumbnail" />
+                           </a>
+                           <p>IMG_003.jpg</p>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <img src="app/img/bg8.jpg" class="thumb64 img-responsive img-thumbnail" />
+                           </a>
+                           <p>IMG_004.jpg</p>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="media">
+                     <a href="#" class="pull-left">
+                        <img alt="" src="app/img/user/02.jpg" class="media-object img-rounded thumb32" />
+                     </a>
+                     <div class="media-body">
+                        <textarea placeholder="Reply here..." class="form-control"></textarea>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+</div>
