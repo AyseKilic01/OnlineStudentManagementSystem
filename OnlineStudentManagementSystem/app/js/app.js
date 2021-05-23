@@ -31,8 +31,8 @@ var App = angular.module('angle', ['ngRoute', 'ngAnimate', 'ngStorage', 'ngCooki
               // Scope Globals
               // ----------------------------------- 
               $rootScope.app = {
-                name: 'Angle',
-                description: 'Angular Bootstrap Admin Template',
+                name: 'Student Management System',
+                description: 'Online Student Management System',
                 year: ((new Date()).getFullYear()),
                 layout: {
                   isFixed: true,
