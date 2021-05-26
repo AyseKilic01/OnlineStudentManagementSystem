@@ -78,7 +78,7 @@ function ($stateProvider, $urlRouterProvider, $controllerProvider, $compileProvi
 
 
   // defaults to dashboard
-  $urlRouterProvider.otherwise('/app/dashboard');
+  $urlRouterProvider.otherwise('/page/login');
 
   // 
   // Application Routes

@@ -6,7 +6,9 @@
 App.controller('LoginFormController', ['$scope', '$http', '$state', function($scope, $http, $state) {
 
   // bind here all data from the form
-  $scope.account = {};
+    $scope.account = {
+        
+    };
   // place the message if something goes wrong
   $scope.authMsg = '';
 
