@@ -550,7 +550,7 @@ App.controller('LoginFormController', ['$scope', '$http', '$state', function($sc
       .post('api/account/login', {email: $scope.account.email, password: $scope.account.password})
       .then(function(response) {
         // assumes if ok, response is an object with some data, if not, a string with error
-        // customize according to your api
+        // apii
         if ( !response.account ) {
           $scope.authMsg = 'Incorrect credentials.';
         }else{
@@ -582,7 +582,7 @@ App.controller('RegisterFormController', ['$scope', '$http', '$state', function(
       .post('api/account/register', {email: $scope.account.email, password: $scope.account.password})
       .then(function(response) {
         // assumes if ok, response is an object with some data, if not, a string with error
-        // customize according to your api
+        // apii
         if ( !response.account ) {
           $scope.authMsg = response;
         }else{

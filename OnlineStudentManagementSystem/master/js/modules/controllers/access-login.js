@@ -20,6 +20,7 @@ App.controller('LoginFormController', ['$scope', '$http', '$state', function($sc
       .then(function(response) {
         // assumes if ok, response is an object with some data, if not, a string with error
         // customize according to your api
+
         if ( !response.account ) {
           $scope.authMsg = 'Incorrect credentials.';
         }else{
